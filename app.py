@@ -1573,7 +1573,7 @@ def index():
 
                                 try:
                                     data = json.loads(json_str)
-
+                                    # all code from https://github.com/flowercoder/sub-api-check-nicegui
                                     # 兼容两种格式：带version的新格式和直接数组的旧格式
                                     if isinstance(data, dict) and 'monitors' in data:
                                         monitors_to_import = data['monitors']
